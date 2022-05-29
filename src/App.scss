@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #DBDB;
+}
+.header{
+  width: 100%;
+  background: rgb(26, 236, 219);
+  font-size: 32px;
+}
+.searchArea{
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .search{
+    width: 35%;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 26px;
+    border: none;
+    outline: none !important;
+  }
+  .search:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  }
+  button{
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+}
+.resultCard{
+  font-size: 24px;
+  .card{
+    width: 40%;
+    margin: 20px auto;
+  }
+  .heroImg{
+    width: 30%;
+    height: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    font-size: 20px;
+  }
+  .searchArea{
+    .search{
+      width: 60%;
+      height: 40px;
+      font-size: 18px;
+    }
+    button{
+      width: 70px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  .resultCard{
+    font-size: 18px;
+    .card{
+      width: 80%;
+    }
+    .heroImg{
+      width: 40%;
+      height: 40%;
+    }
+  }
+}
+@media (min-width: 315px) and (max-width: 330px){
+  .header{
+    font-size: 20px;
+  }
+  .searchArea{
+    .search{
+      width: 50%;
+      height: 30px;
+      border-radius: 20px;
+      font-size: 16px;
+    }
+    button{
+      width: 70px;
+      height: 30px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  }
+  .resultCard{
+    font-size: 16px;
+    .card{
+      width: 80%;
+    }
+    .heroImg{
+      width: 30%;
+      height: 30%;
+    }
+  }
+}
